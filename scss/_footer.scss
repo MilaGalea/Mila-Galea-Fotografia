@@ -14,6 +14,10 @@
             flex-direction: column;
             align-items: center;
         }
+        @media screen and (max-width:300px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     
     .item-contact {
@@ -23,11 +27,14 @@
         @media screen and (max-width: 500px) {
             padding: 5px 0;
         }
+        @media screen and (max-width:300px) {
+            padding: 5px 0;
+        }
     }
     
     .contac-icon {
         font-size: 14px;
-        color: var(--gold1);
+        color: white;
         line-height: 20px;
         margin-right: 4px;
     }

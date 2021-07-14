@@ -37,15 +37,19 @@
         font-size: 16px;
         text-align: center;
     }
-    @media (max-width:960px) {
+    @media screen and (max-width:960px) {
         width: auto;
         height: auto;
     }
-    @media (max-width:700px) {
+    @media screen and (max-width:700px) {
         width: auto;
         height: auto;
     }
     @media screen and (max-width:500px) {
+        width: auto;
+        height: auto;
+    }
+    @media screen and (max-width:300px) {
         width: auto;
         height: auto;
     }

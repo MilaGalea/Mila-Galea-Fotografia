@@ -1,7 +1,7 @@
 /*Páginas Fotos*/
 
 .image-wrapper {
-    width: 720px;
+    width: 100%;
     height: auto;
     margin: 15px auto;
 }
@@ -25,13 +25,19 @@ img {
     margin-top: 5px;
 }
 
-@media (max-width:600px) {
+@media screen and(max-width:700px) {
     .column {
         flex: 50%
     }
 }
 
-@media (max-width:600px) {
+@media screen and(max-width:500px) {
+    .column {
+        flex: 100%
+    }
+}
+
+@media screen and(max-width:300px) {
     .column {
         flex: 100%
     }

@@ -31,6 +31,8 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 header .textos-header {
@@ -53,13 +55,13 @@ header .textos-header h3 {
   font-weight: 300;
   color: white;
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   header {
     width: auto;
     height: auto;
   }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   header {
     width: auto;
     height: auto;
@@ -71,10 +73,16 @@ header .textos-header h3 {
     height: auto;
   }
 }
+@media screen and (max-width: 300px) {
+  header {
+    width: auto;
+    height: auto;
+  }
+}
 
 nav {
   text-align: right;
-  padding: 30px 50px 0 0;
+  padding: 30px 10px 0 10px;
 }
 nav a {
   color: #fff;
@@ -103,13 +111,18 @@ nav:hover {
     height: auto;
   }
 }
+@media screen and (max-width: 300px) {
+  nav {
+    width: auto;
+    height: auto;
+  }
+}
 
 /*header de las páginas*/
 .pages {
   background-image: linear-gradient(#4b77b1, #4ed8cc);
   width: 100%;
   height: 50px;
-  padding: 10px;
   height: 100px;
 }
 
@@ -125,19 +138,25 @@ nav:hover {
 #galeria .col-lg-4:hover {
   border: 5px solid white;
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   #galeria .col-lg-4 {
     width: auto;
     height: auto;
   }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   #galeria .col-lg-4 {
     width: auto;
     height: auto;
   }
 }
 @media screen and (max-width: 500px) {
+  #galeria .col-lg-4 {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 300px) {
   #galeria .col-lg-4 {
     width: auto;
     height: auto;
@@ -237,7 +256,7 @@ a {
 }
 /*Páginas Fotos*/
 .image-wrapper {
-  width: 720px;
+  width: 100%;
   height: auto;
   margin: 15px auto;
 }
@@ -261,12 +280,17 @@ img {
   margin-top: 5px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column {
     flex: 50%;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 500px) {
+  .column {
+    flex: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
   .column {
     flex: 100%;
   }
@@ -310,19 +334,25 @@ img {
   font-size: 16px;
   text-align: center;
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .form-register {
     width: auto;
     height: auto;
   }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .form-register {
     width: auto;
     height: auto;
   }
 }
 @media screen and (max-width: 500px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 300px) {
   .form-register {
     width: auto;
     height: auto;
@@ -357,6 +387,12 @@ img {
     align-items: center;
   }
 }
+@media screen and (max-width: 300px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .item-contact {
   width: 25%;
@@ -368,10 +404,15 @@ img {
     padding: 5px 0;
   }
 }
+@media screen and (max-width: 300px) {
+  .item-contact {
+    padding: 5px 0;
+  }
+}
 
 .contac-icon {
   font-size: 14px;
-  color: var(--gold1);
+  color: white;
   line-height: 20px;
   margin-right: 4px;
 }
