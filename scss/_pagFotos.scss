@@ -1,0 +1,38 @@
+/*Páginas Fotos*/
+
+.image-wrapper {
+    width: 720px;
+    height: auto;
+    margin: 15px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+
+.column img {
+    margin-top: 5px;
+}
+
+@media (max-width:600px) {
+    .column {
+        flex: 50%
+    }
+}
+
+@media (max-width:600px) {
+    .column {
+        flex: 100%
+    }
+}

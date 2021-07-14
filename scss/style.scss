@@ -1,0 +1,27 @@
+/*Nesting o anidamiento*/
+
+:root {
+    --gray: #ffffff80;
+    --gray2: #f7d9d990;
+    --black1: #1a1b1f;
+    --black2: #30353b;
+    --shadow: 0 8px 8px;
+    --color-shadow: #00000033;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+@import 'header';
+@import 'galeria';
+@import 'services';
+@import 'pagFotos';
+@import 'contacto';
+@import 'footer';

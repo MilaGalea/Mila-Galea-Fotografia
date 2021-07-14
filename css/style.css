@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/*Nesting o anidamiento*/
+:root {
+  --gray: #ffffff80;
+  --gray2: #f7d9d990;
+  --black1: #1a1b1f;
+  --black2: #30353b;
+  --shadow: 0 8px 8px;
+  --color-shadow: #00000033;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 600px;
+  background: #60dbdb;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(6, 75, 132, 0.253), rgba(31, 199, 162, 0.459)), url(../img/Niñaslancha.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(6, 75, 132, 0.349), rgba(31, 199, 162, 0.459)), url(../img/Niñaslancha.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+header .textos-header h1 {
+  font-size: 50px;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-family: "Nunito", sans-serif;
+}
+header .textos-header h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+@media (max-width: 960px) {
+  header {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    width: auto;
+    height: auto;
+  }
+}
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+nav a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+nav:hover {
+  text-decoration: none;
+}
+@media (max-width: 960px) {
+  nav {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*header de las páginas*/
+.pages {
+  background-image: linear-gradient(#4b77b1, #4ed8cc);
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  height: 100px;
+}
+
+/*SLIDER DE IMAGENES - GALERIA*/
+#galeria .col-lg-4 {
+  margin: 0;
+  padding: 25px;
+}
+#galeria .col-lg-4 img {
+  width: 100%;
+  height: 250%;
+}
+#galeria .col-lg-4:hover {
+  border: 5px solid white;
+}
+@media (max-width: 960px) {
+  #galeria .col-lg-4 {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  #galeria .col-lg-4 {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #galeria .col-lg-4 {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*Carousel*/
+.carousel-inner {
+  max-height: 39rem;
+}
+
+/*Services*/
+.testimony {
+  background: #fff;
+}
+
+.testimony-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimony-card {
+  width: 30%;
+  height: 500px;
+  background: var(--gray);
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.testimony-img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.testimony-copy {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  width: 90%;
+  background: rgba(59, 65, 69, 0.349);
+  color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow) var(--color-shadow);
+  padding: 15px 8px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.testimony-name {
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+.testimony-position {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .testimony-container {
+    justify-content: space-evenly;
+  }
+
+  .testimony-card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .testimony-card {
+    width: 65%;
+  }
+
+  .testimony-name {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .testimony-card {
+    width: 95%;
+  }
+
+  .testimony-history {
+    font-size: 20px;
+  }
+}
+/*Páginas Fotos*/
+.image-wrapper {
+  width: 720px;
+  height: auto;
+  margin: 15px auto;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+/*Formulario-Contacto*/
+.form-register {
+  width: 400px;
+  background: #256b8b;
+  padding: 30px;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 100%;
+  background: var(--gray);
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  text-align: center;
+}
+@media (max-width: 960px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+
+.controls {
+  width: 100%;
+  background: #ade1e7;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #137b83;
+  font-size: 18px;
+}
+
+/*Footer*/
+.footer {
+  background: #fafafa;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: #fff;
+  background: linear-gradient(#5d86bb, #4ed8cc);
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.item-contact {
+  width: 25%;
+  padding: 40px 0;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .item-contact {
+    padding: 5px 0;
+  }
+}
+
+.contac-icon {
+  font-size: 14px;
+  color: var(--gold1);
+  line-height: 20px;
+  margin-right: 4px;
+}
+
+.contact-title {
+  font-size: 16px;
+}
+
+.contact-title1 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
